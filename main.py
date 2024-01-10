@@ -178,8 +178,7 @@ def get_range(roads_file, start_pt, time):
 
 def main():
     file = "data/L4_1_BDOT10k__OT_SKJZ_L.shp"
-    # get_path(file, (470697.22, 568043.58), (474409.77, 576926.38), algorithm_type="Astar", path_type="shortest", pq=True)
-    get_range(file, (479641.0,574538.3), 5*60)
+    # get_range(file, (479641.0, 574538.3), 5*60)
     # get_path(file, (471524.1, 571970.6), (473638.1, 574654.5), path_type="shortest")
 
 
