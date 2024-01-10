@@ -3,7 +3,7 @@
 road_costs = {"A": 140, "S": 130, "GP": 110, "G": 100, "Z": 80, "L": 60, "D": 40, "I": 50}
 
 # wspolczynnik wplywajacy na to, o ile wolniej poruszaja sie kierowcy w stosunku do maksymalnych predkosci
-factor = 1/4
+factor = 1/3
 
 
 class Edge:

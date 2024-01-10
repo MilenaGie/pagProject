@@ -158,7 +158,7 @@ def set_up(roads_file, start_pt, end_pt=None):
 
 
 # cost_type:        "shortest" / "fastest"
-# algorithm_type:   "Astar" / "D"
+# algorithm_type:   "Astar" / "Dijkstra"
 def get_path(roads_file, start_pt, end_pt, path_type="shortest", algorithm_type="Astar", pq=True):
     p1, p2 = set_up(roads_file, start_pt, end_pt)
     print("algorithm...")
@@ -179,8 +179,8 @@ def get_range(roads_file, start_pt, time):
 def main():
     file = "data/L4_1_BDOT10k__OT_SKJZ_L.shp"
     # get_path(file, (470697.22, 568043.58), (474409.77, 576926.38), algorithm_type="Astar", path_type="shortest", pq=True)
-    # get_range(file, (472057.49, 572294.61), 10*60)
-    get_path("data/bdot_2.shp", (471524.1,571970.6), (473638.1,574654.5), path_type="shortest")
+    get_range(file, (479641.0,574538.3), 5*60)
+    # get_path(file, (471524.1, 571970.6), (473638.1, 574654.5), path_type="shortest")
 
 
 if __name__ == '__main__':
